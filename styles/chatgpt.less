@@ -4,5 +4,27 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.chatgpt {
+.atom-ide-chat {
+  background-color: @tool-panel-background-color;
+  color: @text-color;
+}
+
+.chat-messages {
+  overflow-y: auto;
+  max-height: 15em; /* or any appropriate value */
+}
+
+.chat-input {
+  width: 100%;
+  border: none;
+  padding: @component-padding;
+  box-sizing: border-box;
+}
+
+.chat-send-button {
+  background-color: @button-background-color;
+  color: @text-color;
+  border: none;
+  padding: @component-padding;
+  cursor: pointer;
 }

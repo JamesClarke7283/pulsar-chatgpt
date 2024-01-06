@@ -13,5 +13,14 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "axios": "*"
+  },
+  "configSchema": {
+    "apiKey": {
+      "type": "string",
+      "default": "",
+      "title": "ChatGPT API Key",
+      "description": "Your API key for accessing ChatGPT"
+    }
   }
 }
