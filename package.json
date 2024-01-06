@@ -14,13 +14,5 @@
   },
   "dependencies": {
     "axios": "*"
-  },
-  "configSchema": {
-    "apiKey": {
-      "type": "string",
-      "default": "",
-      "title": "ChatGPT API Key",
-      "description": "Your API key for accessing ChatGPT"
-    }
   }
-}
+  }
