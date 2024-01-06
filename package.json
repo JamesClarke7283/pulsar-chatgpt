@@ -3,7 +3,11 @@
   "main": "./lib/chatgpt",
   "version": "0.0.0",
   "description": "Chat with ChatGPT",
-  "keywords": ["AI", "LLM", "ChatGPT"],
+  "keywords": [
+    "AI",
+    "LLM",
+    "ChatGPT"
+  ],
   "activationCommands": {
     "atom-workspace": "chatgpt:toggle"
   },
@@ -11,5 +15,8 @@
   "license": "GPLv3-or-later",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-ide-markdown-service": "^2.1.0"
   }
-  }
+}
