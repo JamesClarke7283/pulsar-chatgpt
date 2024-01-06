@@ -1,0 +1,17 @@
+{
+  "name": "ChatGPT",
+  "main": "./lib/chatgpt",
+  "version": "0.0.0",
+  "description": "Chat with ChatGPT",
+  "keywords": ["AI", "LLM", "ChatGPT"],
+  "activationCommands": {
+    "atom-workspace": "chatgpt:toggle"
+  },
+  "repository": "https://github.com/atom/chatgpt",
+  "license": "GPLv3-or-later",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

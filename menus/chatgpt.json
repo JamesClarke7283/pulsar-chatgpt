@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle chatgpt",
+        "command": "chatgpt:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "chatgpt",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "chatgpt:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
