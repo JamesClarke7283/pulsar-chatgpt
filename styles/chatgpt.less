@@ -74,7 +74,11 @@
   border-top: 1px solid @message-border-color; // Separate messages from input
 }
 
+
+
 .chatgpt-input-area {
+  height: 150px; /* Fixed height */
+  overflow-y: auto; /* Enable vertical scrollbar */
   flex: 1; // Take up available space
   background: @secondary-background-color; // Ensure visibility
   color: @input-text-color;
