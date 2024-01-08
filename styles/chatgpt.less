@@ -36,6 +36,7 @@
 
 // Message style
 .chat-message {
+  padding-right: 30px;
   position: relative;
   border: 1px solid @message-border-color;
   margin-bottom: @chat-padding-v; // Add spacing between messages
@@ -55,6 +56,69 @@
     min-width: 50px; // Ensure a minimum width for the label
     pointer-events: none;
     user-select: none;
+  }
+}
+
+pre {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+// Style the code tag to ensure it doesn't overlap the copy button or language label
+code {
+  display: block;
+  background: darken(@syntax-background-color, 30%); // Match the code-container background
+  padding: @chat-padding-v @chat-padding-h;
+  margin: 0;
+  border-radius: 0 0 @input-border-radius @input-border-radius; // Rounded corners at the bottom
+  font-family: monospace;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+.code-copy-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: darken(@syntax-background-color, 20%); // Dark background for the copy container
+  border-top-left-radius: @input-border-radius;
+  border-top-right-radius: @input-border-radius;
+  border-bottom: 1px solid @message-border-color; // Add a border to separate from the code block
+}
+
+.code-container {
+  position: relative;
+  background: darken(@syntax-background-color, 30%); // Ensure this is darker than the chat background
+  border-radius: @input-border-radius;
+  margin-bottom: 10px;
+  padding-top: 1px; // Set padding-top to 1px to account for the top border of the code-copy-container
+}
+
+.code-language-label {
+  // Ensure the language label doesn't overlap the code
+  background: darken(@syntax-background-color, 20%);
+  color: lighten(@text-color, 50%);
+  font-size: smaller;
+  padding: 2px @chat-padding-h;
+  border-radius: 3px 3px 0 0; // Rounded corners for the top bar
+  user-select: none;
+  align-self: flex-start; // Align to the start of the flex container
+}
+
+.copy-code-button {
+  // Adjust the button styling
+  background: @button-background-color; // Add a background color to the button
+  color: @text-color;
+  border: none;
+  padding: 2px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  align-self: flex-start; // Align to the start of the flex container
+  &:hover {
+    background-color: darken(@button-background-color, 10%);
   }
 }
 
