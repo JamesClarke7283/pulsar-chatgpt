@@ -1,5 +1,5 @@
 {
-  "name": "ChatGPT",
+  "name": "chatgpt",
   "main": "./lib/chatgpt",
   "version": "0.0.0",
   "description": "Chat with ChatGPT",
@@ -11,7 +11,7 @@
   "activationCommands": {
     "atom-workspace": "chatgpt:toggle"
   },
-  "repository": "https://github.com/atom/chatgpt",
+  "repository": "https://github.com/JamesClarke7283/pulsar-chatgpt",
   "license": "GPLv3-or-later",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
